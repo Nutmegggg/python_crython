@@ -4,6 +4,7 @@ Nutmeg_proof_python_file
 - Lists
 - If + Else statements
 - Loops
+- Objects + Classes
 
 
 //Basic
@@ -29,7 +30,12 @@ Nutmeg_proof_python_file
   (( e.g Intro = “% is way better than %.” , print(intro (“math”, “french”)) , math is way better than french. ))
 - Variable with no value 
   - you can use “None” ((capitalised)) when you want to make a variable with no value 
-  (( e.g variable = None, if variable == None: , print(“The variable variable doesn’t have a value”) 
+  (( e.g variable = None, if variable == None: , print(“The variable variable doesn’t have a - How to make a function - if you need use a specific code multiple times and you’re lazy use this , use , def *name of function*(*parameter name*): , *what you want the function to do* , remember def = define,  parameter = it’s a variable that exists only while a function is being used. (( e.g def testfunc(myname): , print(‘hello %s’ % myname) , testfunc(‘Nutmeg’) , hello Nutmeg ))
+- Variables inside the ‘body of a function’/scope 
+  - remember that a variable inside a scope only exists within the scope and cannot be used outside of the scope
+- Modules 
+  - a module groups functions, variables etc into one chunk of thing xD 
+
 
 // Lists 
 - List 
@@ -77,3 +83,23 @@ Nutmeg_proof_python_file
 - Using 2 conditions in a while loop 
   - self-explanatory, use “and” keyword 
   ((e.g while x < 50 and y < 100:)) 
+
+
+//Objects + Classes
+- Objects + classes 
+  - note - objects = a thing/noun e.g a Giraffe etc , classes = a way to classify objects into groups, “pass” statement is telling python we want to make a class or function but don’t know what to do with it, remember when classifying classes start with the first “question/classifier” 
+- How to make first class/classifier 
+  (( e.g class *first classifier name* , pass )) 
+- How to make a “child/second question” of a class 
+  (( e.g class *insert child class name*(*insert class it’s in*): , pass )) 
+- Adding objects to classes 
+  - How to put stuff in these classifiers lmao use , *insert thing in classifier* = *insert class* ((e.g Gerrald = Giraffe()
+- Defining functions in classes 
+  - essentially adding the actions of a class as a function, note - self parameter = it’s a way for one function in the class to call another function in the class, note - if you don’t know what to put for example using print(*insert stuff* use pass 
+  (( e.g Class Giraffes(Animal): , def eat_leaves(self): , print(‘eating leaves’) , def get_unstuck_from_tree(self): , print(‘getting unstuck from tree’) ))
+- How to use functions in classes 
+  - use , *object name*.*function/characteristic*() 
+  ((e.g Gerrald.eat_leaves() ))
+- Functions calling other functions 
+  - if you wanted a function which uses two existing functions do this 
+  ((e.g Class Giraffe(Animal): , def find_food(self): , self.move() , print(“I’ve found food!”) , self.eat_leaves() ))
